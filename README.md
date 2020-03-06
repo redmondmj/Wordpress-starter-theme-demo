@@ -33,10 +33,13 @@
 ## Theme Setup
 * add gulp-dev to wp-content/themes (found in this repo)
 * edit wp-content/themes/gulp-dev/package.jason to suit your new theme and remove uneccessary info (repo, bugs,homepage, etc.)
-* review dependancies and add/remove as needed
+* review dependencies and add/remove as needed
+    * I removed devdependency versions for this demo
 * install `npm install` then fix all the errors :( cause there always is...
+    * make sure you don't have the files open in your editor
 * review gulpfile.js - edit theme name
     * note the css task for SASS
     * note the image optimizer - just drop your huge images in /RAW/!
     * configure the watcher and browser sync for your dev env.
+* run gulp `gulp`
 
