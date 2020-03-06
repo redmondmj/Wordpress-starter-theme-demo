@@ -1,15 +1,17 @@
 # Wordpress-starter-theme-demo
- NSCC Starter Them Demo based on _s
+ NSCC Starter Theme Demo based on _s ([underscores](https://underscores.me)). This is not a child theme!
 
 ## Pre-Requirements
 * Node -> npm
 * WP-CLI [see our WP Dev Env setup](https://github.com/redmondmj/Wordpress-dev-demo)
 * *AMP Stack [see my WSL LAMP stack](https://github.com/redmondmj/WSL-Lamp)
+* Gulp: `npm install --global gulp-cli`
 
 
 ## Download and Install
+* you may choose to skip some of this if you have an existing wp install. 
+* I'm using wp-cli, but you can manually download and extract the starter theme if you like.
 * starting from an empty project folder... here we go!
-* Gulp: `npm install --global gulp-cli`
 * WP: `wp core download --path=wp-starter.ca`
 * WP-Config: `wp config create --dbname=wpstarter --dbuser=root --prompt=dbpass`
 * WP DB: `wp db create`
@@ -19,7 +21,7 @@
 * enable wp DEBUG in wp-config `define('WP_DEBUG', true);`
 
 ## Get _s
-* `wp scaffold _s nscc-theme --theme_name="NSCC Theme" --author="John Doe" --sissify --activate`
+* install via wp-cli `wp scaffold _s nscc-theme --theme_name="NSCC Theme" --author="John Doe" --sissify --activate`
 * that was easy
 
 ## Explore _s
@@ -30,8 +32,8 @@
 * everything is really well commented!
 * review functions.php
 
-## Theme Setup
-* add gulp-dev to wp-content/themes (found in this repo)
+## Workflow Setup
+* add sample gulp-dev to wp-content/themes ([found in this repo](https://github.com/redmondmj/Wordpress-starter-theme-demo/tree/master/wp-starter.ca/wp-content/themes/gulp-dev))
 * edit wp-content/themes/gulp-dev/package.jason to suit your new theme and remove uneccessary info (repo, bugs,homepage, etc.)
 * review dependencies and add/remove as needed
     * I removed devdependency versions for this demo
@@ -43,3 +45,4 @@
     * configure the watcher and browser sync for your dev env.
 * run gulp `gulp`
 
+## Basic Theme Editing
