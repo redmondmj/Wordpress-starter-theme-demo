@@ -130,7 +130,11 @@ function nscc_theme_scripts() {
 
 	wp_enqueue_style( 'nscc-theme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'nscc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'nscc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_localize_script( 'nscc-theme-navigation', 'nsccthemeScreenReaderText', array(
+		'expand' => __( 'Expand child menu', 'nscc-theme'),
+		'collapse' => __( 'Collapse child menu', 'nscc-theme'),
+	));
 	// adding Bootstrap 4 JS
 	//wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array('jquery') );
 
