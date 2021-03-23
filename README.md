@@ -33,6 +33,7 @@
 * review functions.php
 
 ## Workflow Setup
+* get dependancies! `composer install`
 * add sample gulp-dev to wp-content/themes ([found in this repo](https://github.com/redmondmj/Wordpress-starter-theme-demo/tree/master/wp-starter.ca/wp-content/themes/gulp-dev))
 * edit wp-content/themes/gulp-dev/package.jason to suit your new theme and remove uneccessary info (repo, bugs,homepage, etc.)
 * review dependencies and add/remove as needed
