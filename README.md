@@ -21,7 +21,7 @@
 * enable wp DEBUG in wp-config `define('WP_DEBUG', true);`
 
 ## Get _s
-* install via wp-cli `wp scaffold _s nscc-theme --theme_name="NSCC Theme" --author="John Doe" --sissify --activate`
+* install via wp-cli `wp scaffold _s nscc-theme --theme_name="NSCC Theme" --author="John Doe" --sassify --activate`
 * that was easy
 
 ## Explore _s
