@@ -13,6 +13,7 @@
 * I'm using wp-cli, but you can manually download and extract the starter theme if you like.
 * starting from an empty project folder... here we go!
 * WP: `wp core download --path=wp-starter.ca`
+* CD: `cd wp-starter.ca`
 * WP-Config: `wp config create --dbname=wpstarter --dbuser=root --prompt=dbpass`
 * WP DB: `wp db create`
 * Site Install: `wp core install --url=wp-starter.ca --title="NSCC WP Starter Theme" --admin_user=redmondo --admin_password=*kw*5ZI13kmb --admin_email=info@wp-starter.ca`
