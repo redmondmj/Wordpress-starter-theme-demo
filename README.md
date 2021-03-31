@@ -35,16 +35,19 @@
 
 ## Workflow Setup
 * get dependancies! `composer install`
-* add sample gulp-dev to wp-content/themes ([found in this repo](https://github.com/redmondmj/Wordpress-starter-theme-demo/tree/master/wp-starter.ca/wp-content/themes/gulp-dev))
+
 * edit wp-content/themes/gulp-dev/package.jason to suit your new theme and remove uneccessary info (repo, bugs,homepage, etc.)
 * review dependencies and add/remove as needed
     * I removed devdependency versions for this demo
 * install `npm install` then fix all the errors :( cause there always is...
     * make sure you don't have the files open in your editor
-* review gulpfile.js - edit theme name
+* run server `wp server`
+* run watcher (seperate terminal) `npm run watch` 
+* (OPTIONAL) add sample gulp-dev to wp-content/themes ([found in this repo](https://github.com/redmondmj/Wordpress-starter-theme-demo/tree/master/wp-starter.ca/wp-content/themes/gulp-dev))
+* (OPTIONAL)review gulpfile.js - edit theme name
     * note the css task for SASS
     * note the image optimizer - just drop your huge images in /RAW/!
     * configure the watcher and browser sync for your dev env.
-* run gulp `gulp`
+* (OPTIONAL)run gulp `gulp`
 
 ## Basic Theme Editing
